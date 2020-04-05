@@ -1,0 +1,14 @@
+header {
+    height: 50px;
+    background-color: rgb(102, 65, 98);
+    border-radius: 12px;
+}
+
+header .button {
+    background-color: transparent;
+    height: 30px;
+}
+
+header .button:hover {
+    background-color: transparent;
+}

@@ -1,0 +1,35 @@
+
+.menu img {
+    height: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu .menu-list {
+    position: absolute;
+    z-index: 1;
+}
+
+.menu .menu-list .list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+.menu .menu-list .list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 120px;
+    height: 0px;
+
+    border: 0.5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 0px;
+
+    background-color: rgb(102, 65, 98);
+}
