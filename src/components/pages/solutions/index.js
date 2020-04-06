@@ -15,7 +15,6 @@ class Solutions extends Component {
         const apiSolutions = await getAll()
 
         this.setState({ apiSolutions })
-        console.log(this.state.apiSolutions)
     }
 
     render() {
