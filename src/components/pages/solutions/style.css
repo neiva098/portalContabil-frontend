@@ -1,0 +1,89 @@
+.solutions-container h1 {
+    margin-bottom: 24px;
+    margin-top: 60px;
+}
+
+.solutions-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    list-style: none;
+    height: 100%;
+}
+
+.solutions-container .solution-instance {
+    background-color: white;
+    width: 100%;
+    max-width: 1180px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+}
+
+.solutions-container .resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 80px;
+    margin-top: 1px;
+}
+
+.solutions-container .resume .information {
+    width: 350px;
+}
+
+.solutions-container .information h1 {
+    text-align: justify;
+    margin-bottom: 15px;
+    color:  rgb(111, 204, 111);
+}
+
+.solutions-container .information p {
+    text-align: justify;
+}
+
+.solutions-container .resume img {
+    margin-left: 300px;
+}
+
+
+.solutions-container .detail {
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.solutions-container .detail-img {
+    width: 600px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    border: 0;
+    border-radius: 15px;
+}
+
+.solutions-container .detail-information {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    margin-bottom: 180px;
+}
+
+.solutions-container .detail-information p {
+    text-align: justify;
+    width: 250px;
+}
+
+.solutions-container .detail-information h2 {
+    text-align: justify;
+    width: 270px;
+    margin-bottom: 15px;
+    color:  rgb(111, 204, 111);
+    
+    font-size: 18px;
+}
+

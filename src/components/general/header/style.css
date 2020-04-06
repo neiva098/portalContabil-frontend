@@ -1,12 +1,28 @@
 header {
+    position: fixed;
+    top: 5px;
+    left: 110px;
+    right: 110px;
+    z-index: 1;
+
+    width: auto;
     height: 50px;
+    
+    
     background-color: rgb(102, 65, 98);
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 header .button {
     background-color: transparent;
+
     height: 30px;
+
+    margin-left: auto;
+    margin-top: 0;
 }
 
 header .button:hover {

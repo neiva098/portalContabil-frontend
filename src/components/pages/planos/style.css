@@ -1,12 +1,9 @@
 .planos-container {
-    width: 100%;
-    max-width: 1180px;
-    padding: 0 30px;
-    margin: 32px auto;
+    margin-bottom: 80px;
 }
 
 .planos-container h1 {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 24px;
 }
 
@@ -20,9 +17,11 @@
 
 .planos-container ul li {
     background: #FFF;
-    padding: 24px;
     width: 250px;
     border-radius: 15px;
+
+    padding: 24px;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -34,6 +33,7 @@
     background-color: rgb(111, 204, 111);
     color: white;
     height: 30px;
+    padding: 5px;
 
     margin-right: 20px;
     margin-top: 430px;
@@ -49,21 +49,21 @@
 }
 
 .planos-container ul li h2 {
-    display: block;
     color: #41414d;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
 .planos-container ul li .valor {
-    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 210px;
     height: 100px;
+    border-radius: 13px;
+
     font: 800 25px Roboto, sans-serif;
     color: white;
-    border-radius: 13px;
     background-color: rgb(111, 204, 111);
 }
 
@@ -79,7 +79,7 @@
 }
 
 .planos-container ul li .text-description {
-    margin-top: 20px;
+    margin-top: 15px;
     font: 100 12px Roboto, sans-serif;
     color: black;
 }

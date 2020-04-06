@@ -14,11 +14,12 @@
 .menu .menu-list .list {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    transition: 1s;
 }
 
 .menu .menu-list .list li {
+    padding: 24px;
+    position: relative;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +30,6 @@
     border: 0.5px;
     border-style: solid;
     border-color: white;
-    border-radius: 0px;
 
     background-color: rgb(102, 65, 98);
 }

@@ -13,7 +13,7 @@ class Planos extends Component {
 
     render() {
         return (
-            <div className='planos-container'>
+            <div className='planos-container' id='planos'>
                 <h1>Escolha seu Plano:</h1>
                 <ul>
                     <li>

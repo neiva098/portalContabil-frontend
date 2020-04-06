@@ -5,6 +5,8 @@ import './style.css'
 import Header from '../../general/header'
 import Slide from '../../general/slide'
 import Planos from '../planos'
+import Solutions from '../solutions'
+import Cadastro from '../dudes'
 
 class Portal extends Component {
     headerProps = {
@@ -22,7 +24,7 @@ class Portal extends Component {
                 text: 'Serviços'
             },
             {
-                link: '/sobre',
+                link: '#planos',
                 text: 'Contato'
             }
         ],
@@ -32,15 +34,15 @@ class Portal extends Component {
                 text: 'Acesse sua Conta'
             },
             {
-                link: '/planos',
+                link: '#planos',
                 text: 'Planos'
             },
             {
-                link: '/solucoes',
+                link: '#solucoes',
                 text: 'Soluções'
             },
             {
-                link: '/ajuda',
+                link: '#ajuda',
                 text: 'Ajuda'
             },
         ]
@@ -54,10 +56,12 @@ class Portal extends Component {
 
     render() {
         return (
-            <div className='profile-container'>
+            <div className='portal-container'>
                 <Header headerComponents={this.headerProps}></Header>
                 <Slide></Slide>
+                <Solutions></Solutions>
                 <Planos></Planos>
+                <Cadastro></Cadastro>
             </div>
         )
     }

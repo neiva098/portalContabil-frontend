@@ -1,6 +1,7 @@
 .slide-container {
-    margin-top: 25px;
+    margin-top: 70px;
     height: 400px;
+    width: 100%;
     background-size: cover;
     background-position: 0;
     background-repeat: no-repeat;
@@ -35,7 +36,7 @@
     margin-right: 5px;
 }
 
-.image-info {
+.slide-container .image-info {
     display: flex;
     cursor: pointer;
     flex-direction: column;

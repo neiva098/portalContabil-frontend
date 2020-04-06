@@ -28,7 +28,7 @@ class Slide extends Component {
 
     async componentDidMount() {
         this.images = await getAllBackGroundImages()
-        console.log(this.images)
+
         setInterval(() => {
             this.handleChangeImage()
         }, 6000)
@@ -40,10 +40,10 @@ class Slide extends Component {
         const styleContainer = {...this.state.styleContainer}
         const backGroundImageInfo = {...this.state.backGroundImageInfo}
 
-        styleContainer.backgroundImage = `url('data:image/jpeg;base64,/${this.images[this.index].base_64 || localBackGroundImage}')`
-        backGroundImageInfo.text = this.images[this.index].text
-        backGroundImageInfo.title = this.images[this.index].title
-        backGroundImageInfo.link = this.images[this.index].link
+        styleContainer.backgroundImage = `url('data:image/jpeg;base64,/${this.images[this.index]?.base_64 || localBackGroundImage}')`
+        backGroundImageInfo.text = this.images[this.index]?.text || ''
+        backGroundImageInfo.title = this.images[this.index]?.title || ''
+        backGroundImageInfo.link = this.images[this.index]?.link || ''
 
         this.setState({styleContainer, backGroundImageInfo})
     }

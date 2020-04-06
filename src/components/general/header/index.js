@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
 import Menu from '../sideMenu'
+import { HashLink } from 'react-router-hash-link'
 
 class Header extends Component {
     constructor(props) {
@@ -50,9 +51,16 @@ class Header extends Component {
         return (
             <header>
                 <Menu menuElements={this.props.headerComponents.menuElements}></Menu>
-                {this.props.headerComponents.headerButtons.map((item, index) => (
-                    <Link className='button' key={index} to={item.link} style={this.state.buttonsStyle}>{item.text}</Link>
-                ))}
+                {this.props.headerComponents.headerButtons.map((item, index) => {
+                    if(item.link.includes('#')) {
+                        return (
+                            <HashLink className='button' key={index} smooth  to={item.link}  style={this.state.buttonsStyle}>{item.text}</HashLink>
+                        )
+                    }
+                    else
+                    return (
+                        <Link className='button' key={index} to={item.link}  style={this.state.buttonsStyle}>{item.text}</Link>
+                )})}
             </header>
         )
     }

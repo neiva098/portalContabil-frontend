@@ -1,0 +1,42 @@
+
+.dude-container h1 {
+    margin-bottom: 30px;
+}
+
+.dude-container .content {
+    width: 100%;
+    padding: 80px;
+    background: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dude-container .content img {
+    width: 200px;
+}
+
+.dude-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.dude-container .content section p {
+    color: #737380;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 32px;
+}
+
+.dude-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.dude-container .content form input,
+.dude-container .content form textarea {
+    margin-top: 8px;
+}
