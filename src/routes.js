@@ -4,6 +4,8 @@ import React, { Component } from 'react'
 import Portal from './components/pages/portal'
 import Planos from './components/pages/planos'
 import Ajuda from './components/pages/dudes'
+import Cadastro from './components/pages/cadastro'
+
 
 class Routes extends Component{
     constructor(props){
@@ -19,6 +21,7 @@ class Routes extends Component{
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact component={Portal}></Route>
+                <Route path='/cadastro' component={Cadastro}></Route>
             </Switch>
         </BrowserRouter>
       )
