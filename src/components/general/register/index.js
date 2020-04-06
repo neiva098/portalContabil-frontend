@@ -24,7 +24,7 @@ class Register extends Component{
   render() {
     return(
         <div className='register-container'>
-          <div className='content'>
+          <div className='content' id='register'>
               <section>
                     <img src={logo} alt='Be frog'></img>
                     <h1>Quem é você</h1>

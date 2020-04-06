@@ -9,7 +9,6 @@ class Cadastro extends Component{
     this.state = {
 
     }
-
   }
 
   render() {
