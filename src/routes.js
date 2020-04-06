@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 import Portal from './components/pages/portal'
 import Planos from './components/pages/planos'
-import Ajuda from './components/pages/dudes'
+
 import Cadastro from './components/pages/cadastro'
 
 
