@@ -6,7 +6,7 @@ import Header from '../../general/header'
 import Slide from '../../general/slide'
 import Planos from '../planos'
 import Solutions from '../solutions'
-import Cadastro from '../dudes'
+import Dudes from '../../general/dudes'
 
 class Portal extends Component {
     headerProps = {
@@ -61,7 +61,7 @@ class Portal extends Component {
                 <Slide></Slide>
                 <Solutions></Solutions>
                 <Planos></Planos>
-                <Cadastro></Cadastro>
+                <Dudes></Dudes>
             </div>
         )
     }
