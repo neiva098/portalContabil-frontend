@@ -32,11 +32,11 @@ class Register extends Component{
             </section>
             
             <form>
-              <input placeholder='*Seu nome' name='name' value={this.state.name} onChange={this.changeState} required='true'></input>
-              <input type='email' placeholder='*Seu e-mail' name='email' value={this.state.email} onChange={this.changeState} required='true'></input>
+              <input placeholder='*Seu nome' name='name' value={this.state.name} onChange={this.changeState} required={true}></input>
+              <input type='email' placeholder='*Seu e-mail' name='email' value={this.state.email} onChange={this.changeState} required={true}></input>
               <input placeholder='Seu telefone' name='telefone' value={this.state.telefone} onChange={this.changeState}></input>
               <input placeholder='Sua empresa' name='empresa' value={this.state.empresa} onChange={this.changeState}></input>
-              <textarea placeholder='*Digite aqui a sua dúvida' name='duvida' value={this.state.duvida} onChange={this.changeState} required='true'></textarea>
+              <textarea placeholder='*Digite aqui a sua dúvida' name='duvida' value={this.state.duvida} onChange={this.changeState} required={true}></textarea>
               <button className='button' type='submit'>Enviar</button>
             </form>
         </div>
