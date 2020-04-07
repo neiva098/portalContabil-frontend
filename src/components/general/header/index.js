@@ -26,7 +26,7 @@ class Header extends Component {
 
     updateHeader() {
         const LIMIT = 580
-        const buttonsStyle = {...this.state.buttonsStyle}
+        const buttonsStyle = { ...this.state.buttonsStyle }
 
         if (window.innerWidth < LIMIT && buttonsStyle.visibility === 'visible') {
             return this.setState({
@@ -51,16 +51,10 @@ class Header extends Component {
         return (
             <header>
                 <Menu menuElements={this.props.headerComponents.menuElements}></Menu>
-                {this.props.headerComponents.headerButtons.map((item, index) => {
-                    if(item.link.includes('#')) {
-                        return (
-                            <HashLink className='button' key={index} smooth  to={item.link}  style={this.state.buttonsStyle}>{item.text}</HashLink>
-                        )
-                    }
-                    else
-                    return (
-                        <Link className='button' key={index} to={item.link}  style={this.state.buttonsStyle}>{item.text}</Link>
-                )})}
+                {
+                    this.props.headerComponents.headerButtons.map((item, index) => 
+                        <HashLink className='button' key={index} smooth to={item.link} style={this.state.buttonsStyle}>{item.text}</HashLink>
+                )}
             </header>
         )
     }
