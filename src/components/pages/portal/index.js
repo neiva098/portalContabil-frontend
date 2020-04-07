@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
+import {portalHeaderElements} from '../../../utils/constants'
 import './style.css'
 import Header from '../../general/header'
 import Slide from '../../general/slide'
@@ -9,44 +10,6 @@ import Solutions from '../solutions'
 import Dudes from '../../general/dudes'
 
 class Portal extends Component {
-    headerProps = {
-        menuElements: [
-            {
-                link: '/logIn',
-                text: 'LogIn'
-            },
-            {
-                link: '/cadastro',
-                text: 'Cadastro'
-            },
-            {
-                link: '/servicos',
-                text: 'Serviços'
-            },
-            {
-                link: '#planos',
-                text: 'Contato'
-            }
-        ],
-        headerButtons: [
-            {
-                link: '/logIn',
-                text: 'Acesse sua Conta'
-            },
-            {
-                link: '#planos',
-                text: 'Planos'
-            },
-            {
-                link: '#solucoes',
-                text: 'Soluções'
-            },
-            {
-                link: '#ajuda',
-                text: 'Ajuda'
-            },
-        ]
-    }
 
     constructor(props) {
         super(props)
@@ -57,7 +20,7 @@ class Portal extends Component {
     render() {
         return (
             <div className='portal-container'>
-                <Header headerComponents={this.headerProps}></Header>
+                <Header headerComponents={portalHeaderElements}></Header>
                 <Slide></Slide>
                 <Solutions></Solutions>
                 <Planos></Planos>

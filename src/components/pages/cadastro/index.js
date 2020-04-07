@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Planos from '../planos'
 import Register from '../../general/register'
+import Header from '../../general/header'
 import './style.css'
+import {cadastroHeaderElements} from '../../../utils/constants'
 
 class Cadastro extends Component{
   constructor(props){
@@ -14,6 +16,7 @@ class Cadastro extends Component{
   render() {
     return(
       <div className='cadastro-container'>
+        <Header headerComponents={cadastroHeaderElements}></Header>
         <Planos></Planos>
         <Register></Register>
       </div>
