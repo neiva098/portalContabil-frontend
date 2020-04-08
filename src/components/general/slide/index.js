@@ -54,7 +54,7 @@ class Slide extends Component {
 
     render() {
         return (
-            <div className='slide-container' style={this.state.styleContainer}>
+            <div className='slide-container' style={this.state.styleContainer} id='slide'>
                 <FiArrowLeft id='left' className='button' size={5} onClick={() => this.handleArrowImage('left')}></FiArrowLeft>
                 <div className='image-info' onClick={() => this.props.history.push('/profile')}>
                     <h1>{this.state.backGroundImageInfo.title}</h1>

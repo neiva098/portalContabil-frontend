@@ -44,7 +44,7 @@ export const cadastroHeaderElements = {
             text: 'LogIn'
         },
         {
-            link: '/',
+            link: '/#slide',
             text: 'Portal'
         },
         {
@@ -58,7 +58,7 @@ export const cadastroHeaderElements = {
     ],
     headerButtons: [
         {
-            link: '/',
+            link: '/#slide',
             text: 'Portal'
         },
         {
