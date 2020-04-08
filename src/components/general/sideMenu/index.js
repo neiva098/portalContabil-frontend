@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './style.css'
 import logo from '../../../assets/lagarto.svg'
+import { HashLink } from 'react-router-hash-link'
 
 class Menu extends Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class Menu extends Component {
                         {this.props.menuElements.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className='button' href={item.link}>{item.text}</a>
+                                    <HashLink className='button' key={index} smooth to={item.link}>{item.text}</HashLink>
                                 </li>
                             )
                         })}

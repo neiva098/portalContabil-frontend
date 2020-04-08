@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
 import Menu from '../sideMenu'
 import { HashLink } from 'react-router-hash-link'
 
