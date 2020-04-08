@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 
 import Portal from './components/pages/portal'
 import LogIn from './components/pages/logIn'
+import UserPortal from './components/pages/user/portal'
 
 import Cadastro from './components/pages/cadastro'
 
@@ -23,6 +24,7 @@ class Routes extends Component{
                 <Route path='/' exact component={Portal}></Route>
                 <Route path='/cadastro' component={Cadastro}></Route>
                 <Route path='/logIn' component={LogIn}></Route>
+                <Route path='/user/home' component={UserPortal}></Route>
             </Switch>
         </BrowserRouter>
       )
