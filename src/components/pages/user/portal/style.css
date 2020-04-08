@@ -1,0 +1,63 @@
+.user-portal {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-portal ul {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    list-style: none;
+}
+
+.user-portal ul li {
+    margin: 30px;
+
+    cursor: pointer;
+
+    border: 1px rgb(111, 204, 111);
+    border-style: solid;
+
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 9px;
+    background-color: white;
+
+    transition: 0.4s;
+}
+
+.user-portal ul li:hover {
+    background-color: rgb(111, 204, 111);
+    border-color: white;
+}
+
+.user-portal ul li:hover .icon {
+    color: white;
+}
+
+.user-portal ul li:hover p {
+    color: white;
+}
+
+.user-portal ul li .icon {
+    margin-top: 70px;
+    color: rgb(111, 204, 111);
+}
+
+
+.user-portal ul li p {
+    margin-top: 15px;
+    font: 400 18px Roboto, sans-serif;
+}
