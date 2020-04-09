@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
-import {portalHeaderElements} from '../../../utils/constants'
+import {portalHeaderElements} from '../../../utils/constants/header'
 import './style.css'
 import Header from '../../general/header'
 import Slide from '../../general/slide'
