@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 
 import Portal from './components/pages/portal'
 import LogIn from './components/pages/logIn'
-import UserPortal from './components/pages/user/portal'
+import UserHome from './components/pages/user/home'
+import FiscoFacil from './components/pages/user/fiscoFacil'
 
 import Cadastro from './components/pages/cadastro'
 
@@ -24,7 +25,8 @@ class Routes extends Component{
                 <Route path='/' exact component={Portal}></Route>
                 <Route path='/cadastro' component={Cadastro}></Route>
                 <Route path='/logIn' component={LogIn}></Route>
-                <Route path='/user/home' component={UserPortal}></Route>
+                <Route path='/user/home' component={UserHome}></Route>
+                <Route path='/fiscoFacil' component={FiscoFacil}></Route>
             </Switch>
         </BrowserRouter>
       )
