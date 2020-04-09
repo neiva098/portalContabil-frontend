@@ -3,7 +3,7 @@ import Planos from '../planos'
 import Register from '../../general/register'
 import Header from '../../general/header'
 import './style.css'
-import {cadastroHeaderElements} from '../../../utils/constants'
+import {cadastroHeaderElements} from '../../../utils/constants/header'
 
 class Cadastro extends Component{
   constructor(props){

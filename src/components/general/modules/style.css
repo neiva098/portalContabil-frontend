@@ -1,4 +1,4 @@
-.user-portal {
+.modules-container {
     width: 100%;
     margin: 0 auto;
 
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.user-portal ul {
+.modules-container ul {
     margin-top: 100px;
 
     display: flex;
@@ -17,7 +17,7 @@
     list-style: none;
 }
 
-.user-portal ul li {
+.modules-container ul li {
     margin: 30px;
 
     cursor: pointer;
@@ -25,8 +25,8 @@
     border: 1px rgb(111, 204, 111);
     border-style: solid;
 
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 220px;
 
     display: flex;
     flex-direction: column;
@@ -38,26 +38,27 @@
     transition: 0.4s;
 }
 
-.user-portal ul li:hover {
+.modules-container ul li:hover {
     background-color: rgb(111, 204, 111);
     border-color: white;
 }
 
-.user-portal ul li:hover .icon {
+.modules-container ul li:hover .icon {
     color: white;
 }
 
-.user-portal ul li:hover p {
+.modules-container ul li:hover p {
     color: white;
 }
 
-.user-portal ul li .icon {
+.modules-container ul li .icon {
     margin-top: 70px;
     color: rgb(111, 204, 111);
 }
 
 
-.user-portal ul li p {
+.modules-container ul li p {
     margin-top: 15px;
-    font: 400 18px Roboto, sans-serif;
+    text-align: justify;
+    font: 500 18px Roboto, sans-serif;
 }
