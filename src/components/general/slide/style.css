@@ -47,6 +47,7 @@
 
 .slide-container .image-info h1 {
     font: 800 25px Roboto, sans-serif;
+    text-align: left;
     color: rgb(95, 190, 95);
     width: 60%;
     margin-bottom: 20px;
