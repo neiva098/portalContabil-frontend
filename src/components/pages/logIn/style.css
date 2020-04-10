@@ -28,6 +28,10 @@
     margin-bottom: 10px;
 }
 
+.login-container section.form form .button:hover {
+    border: 1px solid rgb(111, 204, 111);
+}
+
 .login-container input {
     margin-top: 8px;
 }
