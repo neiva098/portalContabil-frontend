@@ -51,7 +51,9 @@
 }
 
 .planos-container ul li .check-plan:hover {
-    opacity: 0.8;
+    background-color: white;
+    color: rgb(111, 204, 111);
+    border: 1px solid rgb(111, 204, 111);
 }
 
 .planos-container ul li h2 {
