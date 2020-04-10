@@ -1,5 +1,5 @@
 import {MdAccountBalance, MdLibraryBooks } from 'react-icons/md'
-import {FaPencilAlt, FaUserAstronaut, FaUserAlt, FaTable} from 'react-icons/fa'
+import {FaUserAstronaut, FaUserAlt, FaTable} from 'react-icons/fa'
 import {TiCalendar} from 'react-icons/ti'
 import {GiTestTubes} from 'react-icons/gi'
 
@@ -32,7 +32,7 @@ export const fiscoFacilModules = [
     {
         icon: <MdLibraryBooks  size={50} className='icon' ></MdLibraryBooks>,
         title: 'Gerenciar Certificados',
-        action: (component) => component.props.history.push('/')
+        action: (component) => component.props.history.push('/fiscoFacil/certificate/register')
     },
     {
         icon: <FaTable  size={50} className='icon' ></FaTable>,
